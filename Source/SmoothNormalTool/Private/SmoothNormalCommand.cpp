@@ -72,7 +72,7 @@ void SmoothNormalCommand::SmoothNormalStaticMesh(FAssetData AssetData)
 	TMap<FVector3f, FVector3f> VertexWieldRemap;
 	for(int Index = 0; Index < StaticMesh->GetNumSourceModels(); Index++)
 	{
-		FStaticMeshSourceModel& SourceModel = StaticMesh->GetSourceModels(0);
+		FStaticMeshSourceModel& SourceModel = StaticMesh->GetSourceModels(Index);
 		FRawMesh RawMesh;
 
 		SourceModel.LoadRawMesh(RawMesh);
@@ -346,7 +346,7 @@ void SmoothNormalCommand::SmoothNormalStaticMeshTriangle(FAssetData AssetData)
 	TMap<FVector3f, TArray<FVector3f>> WeightingNormalMap;
 	for(int Index = 0; Index < StaticMesh->GetNumSourceModels(); Index++)
 	{
-		FStaticMeshSourceModel& SourceModel = StaticMesh->GetSourceModels(0);
+		FStaticMeshSourceModel& SourceModel = StaticMesh->GetSourceModels(Index);
 		FRawMesh RawMesh;
 
 		SourceModel.LoadRawMesh(RawMesh);
