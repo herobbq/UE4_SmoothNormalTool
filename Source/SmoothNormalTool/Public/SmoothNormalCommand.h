@@ -5,7 +5,7 @@
 
 struct NormalInfor
 {
-	FVector normal;
+	FVector3f normal;
 	float angle;
 };
 class SMOOTHNORMALTOOL_API SmoothNormalCommand
