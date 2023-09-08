@@ -1,7 +1,7 @@
 #include "SmoothNormalCommand.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/StaticMeshSourceData.h"
-#include "RawMesh/Public/RawMesh.h"
+#include "RawMesh.h"
 #include "math.h"
 #include "MeshUtilities.h"
 #include "Rendering/SkeletalMeshModel.h"
